@@ -1,17 +1,5 @@
 public class Test {
     public static void main(String[] args) {
-//        int firstNumber = Utils.inputIntStatic("Podaj liczbę: ");
-//
-//        Utils utilsObj = new Utils();
-//        int secondNumber = utilsObj.inputIntObject("Podaj liczbę: ");
-//
-//        System.out.println(firstNumber);
-//        System.out.println(secondNumber);
-
-//        Student firstStudent = new Student("Jan", "Testowy");
-//        System.out.println(firstStudent.getName());
-//        System.out.println(firstStudent.getSurname());
-//        System.out.println(firstStudent.getFullName());
 
         Point point = new Point();
 
