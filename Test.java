@@ -1,3 +1,6 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Test {
     public static void main(String[] args) {
 
@@ -60,6 +63,10 @@ class Car {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public String getColor() {
+        return color;
     }
 
     public void setColor(String color) {
