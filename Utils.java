@@ -1,26 +1,30 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Utils {
+class Utils {
     static int inputIntStatic(String message) {
-        try {
-            System.out.print(message);
-            Scanner scanner = new Scanner(System.in);
-            return scanner.nextInt();
-        } catch (InputMismatchException e) {
-            System.out.println("Podano błędną wartość");
-            return inputIntStatic(message);
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            try {
+                System.out.print(message);
+                return scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Nieprawidłowe dane wejściowe. Proszę podać liczbę całkowitą.");
+                scanner.next(); // Wyczyść błędne dane wejściowe
+            }
         }
     }
 
     int inputIntObject(String message) {
-        try {
-            System.out.print(message);
-            Scanner scanner = new Scanner(System.in);
-            return scanner.nextInt();
-        } catch (InputMismatchException e) {
-            System.out.println("Podano błędną wartość");
-            return inputIntObject(message);
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            try {
+                System.out.print(message);
+                return scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Nieprawidłowe dane wejściowe. Proszę podać liczbę całkowitą.");
+                scanner.next(); 
+            }
         }
     }
 }
